@@ -1,8 +1,11 @@
 import os
 FLASK_HOST = "0.0.0.0"
-FLASK_PORT = 5005
+FLASK_PORT = 8000
 
-MONGO_URL = "mongodb://localhost:27017"
+MONGO_USERNAME = "test"
+MONGO_PASSWORD = "Velo$123"
+
+MONGO_URL = f"mongodb+srv://test:{MONGO_PASSWORD}@docdb-cluster-20260630-1826.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
 db_name = 'test_db'
 
 user_collection_name = 'collection_user'
